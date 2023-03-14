@@ -1,0 +1,47 @@
+
+
+body{
+    margin:0;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main{
+    
+    width:40%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 10%;
+}
+
+input{
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+form div{
+    display: block;
+    margin-top: 1em;
+}
+form div span{
+    display: block;
+    color:red;
+
+    font-size: small;
+}
+label {
+    display:block;
+}
+button{
+    margin-top: 30px;
+    border: 0px;
+    background-color: green;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
+

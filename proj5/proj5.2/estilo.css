@@ -1,0 +1,27 @@
+
+body {
+    background-color: #ddd;
+    color: #444;
+    font-family: Helvetica;
+    line-height: 1.5;
+    width: 60%;
+    justify-items: center;
+    margin: auto;
+    padding: 5%;
+    
+}
+main {
+    background-color: white;
+    padding:5%;
+    border-radius: 10px;
+}
+section {
+    border-top: 1px solid gray ;
+    margin-bottom: 3%;
+}
+h1, h2 {
+    margin-top: 15px;
+    color:rgb(140, 76, 8);
+    user-select: none;
+    cursor:pointer
+}

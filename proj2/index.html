@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de cliente</title>
+    </head>
+    <body>
+        <h1>Cadastro de cliente</h1>
+        <form action="cadastraCliente.php" method="post">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+                </div>
+                <div>
+                    <label for="age">Idade</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div>
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" name="tel" required>
+                </div>
+                <div>
+                    <label for="birthdate">Data de nascimento</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+                <div>
+                    <label for="maritalstatus">Estado civil</label>
+                    <select id="maritalstatus" name="maritalstatus">
+                        <option value="">Selecione um estado civil</option>
+                        <option value="SO">Solteira(o)</option>
+                        <option value="CA">Casada(o)</option>
+                        <option value="VI">Viúva(o)</option>
+                        <option value="DI">Divorciada(o)</option>
+                        <option value="SE">Separada(o)</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="M">
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="F">
+                        <label for="female">Feminino</label>
+                    </div>
+                </fieldset>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço de entrega</legend>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" pattern="\d{5}-?\d{3" required>
+                </div>
+                <div>
+                    <label for="typeadress">Tipo de logradouro</label>
+                    <select id="typeadress" name="typeadress" required>
+                        <option value="">Selecione um tipo</option>
+                        <option value="A">Area</option>
+                        <option value="AL">Alameda</option>
+                        <option value="AV">Avenida</option>
+                        <option value="BC">Beco</option>
+                        <option value="PRQ">Parque</option>
+                        <option value="PC">Praça</option>
+                        <option value="R">Rua</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="adress">Logradouro</label>
+                    <input type="text" id="adress" name="adress" required>
+                </div>
+                <div>
+                    <label for="district">Bairro</label>
+                    <input type="text" id="district" name="district" required>
+                </div>
+                <div>
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div>
+                    <label for="estate">Estado</label>
+                    <input type="text" id="estate" name="estate" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações adicionais</legend>
+                <div>
+                    <fieldset>
+                        <legend>Interesses</legend>
+                        <div>
+                            <input type="checkbox" id="movies" name="interests[]" value="movie">
+                            <label for="movies">Filmes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="books" name="interests[]" value="book">
+                            <label for="books">Livros</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="informatics" name="interests[]" value="informatics">
+                            <label for="informatics">Informatica</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="games" name="interests[]" value="game">
+                            <label for="games">Games</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="clothes" name="interests[]" value="clothes">
+                            <label for="clothes">Roupas</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="infoadditional">Informações adicionais</label>
+                        <textarea  id="infoadditional" name="infoadditional">
+                            
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="file">Imagem de perfil</label>
+                        <input type="file" id="file" name="file" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
+
+<!-- 
+
+
+    Nesse projeto, você deverá criar uma página web contendo um formulário de cadastro de cliente. O formulário deve possuir campos apropriados para coletar os dados listados a seguir. Utilize apenas a linguagem HTML5. Outras restrições e orientações são fornecidas na sequência.
+Dados pessoais:
+
+
+
+
+
+
+  O formulário deve ser subdividido em três partes (Dados Pessoais, Endereço de Entrega e Informações Adicionais) utilizando o elemento <fieldset>;
+
+
+5.    O formulário deve conter pelo menos um elemento de cada tipo listado a seguir:
+
+
+
+
+g. <input type=”checkbox”>
+i. <textarea>
+
+
+Informações Adicionais:
+• Campo opcional para seleção de interesses. Deve haver opções para que o usuário possa selecionar um ou vários campos de interesse (devem ser disponibilizadas pelo menos as opções: filmes, informática, games, livros e roupas);
+• Campo opcional para o fornecimento de informações complementares de forma textual e livre, que poderá conter múltiplas linhas de texto;
+• Campo opcional para anexar um arquivo.
+A página deve ser construída seguindo as instruções, orientações e restrições descritas na sequência.
+
+
+ -->
